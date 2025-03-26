@@ -17,7 +17,7 @@ export default function Page() {
       <div className="flex flex-col">
         <div className="mb-6 flex gap-6">
           <Avatar className="h-20 w-20">
-            <AvatarImage src="/avatar/me3.jpg" />
+            <AvatarImage src="/avatar/m.jpg" />
             <AvatarFallback>Z</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
