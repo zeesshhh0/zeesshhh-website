@@ -1,52 +1,53 @@
+import Image from "next/image";
+
 export default function ToolsSection() {
-  const frontendTools = [
-    { name: "React", icon: "react" },
-    { name: "Next.JS", icon: "nextjs" },
-    { name: "Typescript", icon: "typescript" },
-    { name: "TailwindCSS", icon: "tailwind" },
+
+  const tools = [
+    {
+      toolName: "AI", list: [
+        { name: "CrewAI", icon: "crewai" },
+        { name: "Langchain", icon: "langchain" },
+      ]
+    },
+    {
+      toolName: "Frontend", list: [
+        { name: "React", icon: "react" },
+        { name: "Next.JS", icon: "nextjs" },
+        { name: "Typescript", icon: "typescript" },
+        { name: "TailwindCSS", icon: "tailwind" },
+        { name: "ShadCN UI", icon: "shadcn" },
+      ]
+    },
+    {
+      toolName: "Backend", list: [
+        { name: "FastAPI", icon: "fastapi" },
+        { name: "Vercel", icon: "vercel" },
+      ]
+    },
   ]
 
-  const backendTools = [
-    { name: "tRPC", icon: "trpc" },
-    { name: "Vercel", icon: "vercel" },
-    { name: "DrizzleORM", icon: "drizzle" },
-    { name: "Bun", icon: "bun" },
-    { name: "Node.JS", icon: "nodejs" },
-    { name: "PostgreSQL", icon: "postgres" },
-  ]
+
+
 
   // Simple icon component that renders a placeholder for each technology
-  const TechIcon = ({ type }: { type: string }) => (
-    <div className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full">
-      <span className="text-xs text-white">{type.substring(0, 2).toUpperCase()}</span>
-    </div>
+  const TechIcon = ({ name }: { name: string }) => (
+    <Image src={`/icons/${name}.svg`} alt={name} width={32} height={32} />
   )
 
   return (
     <div className="space-y-12">
-      <div>
-        <h2 className="text-xl font-bold text-white mb-6">Frontend</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {frontendTools.map((tool, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2">
-              <TechIcon type={tool.icon} />
-              <span className="text-sm">{tool.name}</span>
-            </div>
-          ))}
+      {tools.map((tool, index) => (
+        <div key={index}>
+          <h2 className="text-xl font-bold mb-6">{tool.toolName}</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            {tool.list.map((tooll, index) => (
+              <div key={index} className="flex flex-col items-center space-y-2 group hover:scale-110 transition-all duration-300">
+                <TechIcon name={tooll.icon} />
+                <span className="text-sm font-medium">{tooll.name}</span>
+              </div>))}
+          </div>
         </div>
-      </div>
-
-      <div>
-        <h2 className="text-xl font-bold text-white mb-6">Backend and Infrastructure</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {backendTools.map((tool, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2">
-              <TechIcon type={tool.icon} />
-              <span className="text-sm">{tool.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
   )
 }

@@ -1,22 +1,20 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import localFont from "next/font/local";
-import Footer from "./components/footer"
 import Particles from "./components/particles"
 import BlurFade from "./components/blur-fade"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import NavBar from "./components/nav"
 
 export const metadata: Metadata = {
   title: {
-    default: 'Zeeshan',
-    template: '%s | Z3SH4N',
+    default: 'Zeeshan | AI Engineer',
+    template: '%s | Zeeshan ',
   },
   description: 'This is Zeeshan\'s portfolio.',
   openGraph: {
     title: 'Zeeshan Porfolio',
     description: 'This is Zeeshan\'s portfolio.',
-    siteName: 'Z3SH4N',
+    siteName: 'Zeeshan',
     locale: 'en_US',
     type: 'website',
   },
@@ -57,7 +55,6 @@ export default function RootLayout({
       <body className="antialiased">
           <main className="relative mx-auto mt-6 max-w-xl px-4">
             <div>
-            {/* <NavBar /> */}
             <BlurFade inView>
             {children}
             </BlurFade>

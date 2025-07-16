@@ -1,21 +1,10 @@
-import Image from 'next/image'
-import { Avatar, AvatarFallback, AvatarImage } from './components/avatar'
-import { HoverEffect } from './components/card-hover-effect';
-// import { skills } from './components/skills';
-// import ProjectCard from "./components/project-card"
-// import { projects } from './components/projects';
-// import { BlogPosts3 } from './components/posts';
 import Link from 'next/link';
-import { SiGithub, SiLinkerd, SiPeerlist, SiReact, SiX } from '@icons-pack/react-simple-icons';
-import ArrowIcon from './components/arrow-icon';
-import ContactButton from './components/contact-button';
-import { Badge, badgeVariants } from './components/badge';
-import { Button } from './components/button';
-// import { Calendar, Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { SiGithub, SiPeerlist, SiX } from '@icons-pack/react-simple-icons';
+
 import WorkSection from './components/projects-section';
 import ExperienceSection from './components/experience-section';
 import ToolsSection from './components/tools-section';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/app/components/tabs';
 import { Mail } from 'lucide-react';
 import Footer from './components/footer';
 import BlurFade from './components/blur-fade';
@@ -29,8 +18,8 @@ export default function Page() {
         <header className="container mx-auto px-2 py-4">
           <div className="mb-8">
             <h1 className="text-xl font-bold text-white">Hey, I&apos;m Zeeshan</h1>
-            <p className="mt-2 text-zinc-400">
-              interested in being an AI Engineer and working with LLMs. Open to work. Contact me below.
+            <p className="mt-2 text-zinc-400 font-medium">
+                I am an AI Engineer Building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
             </p>
 
             {/* Social Links */}
@@ -55,19 +44,19 @@ export default function Page() {
             <TabsList className="bg-transparent p-0 mb-4">
               <TabsTrigger
                 value="work"
-                className="data-[state=active]:font-bold rounded-none px-0 py-2"
+                className="data-[state=active]:font-extrabold rounded-none px-0 py-2"
               >
                 Work
               </TabsTrigger>
               <TabsTrigger
                 value="experience"
-                className="data-[state=active]:font-bold rounded-none px-4 py-2"
+                className="data-[state=active]:font-extrabold rounded-none px-4 py-2"
               >
                 Experience
               </TabsTrigger>
               <TabsTrigger
                 value="tools"
-                className="data-[state=active]:font-bold px-0 py-2"
+                className="data-[state=active]:font-extrabold px-0 py-2"
               >
                 Tools
               </TabsTrigger>
@@ -94,7 +83,6 @@ export default function Page() {
         </header>
       </div>
       <Footer />
-
     </div>
   )
 }

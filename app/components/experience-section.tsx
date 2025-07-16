@@ -1,7 +1,7 @@
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Engineer at Webturtles (IND)",
+      title: "Engineer at Webturtles",
       period: "June 2023 - Present",
       description:
         "Building AI blog writer agents with CrewAI, alongside optimizing a high-traffic forum and WordPress systems. Enhanced performance, user engagement, and content workflows through AI, PHP upgrades, and custom tools.",
