@@ -9,13 +9,13 @@ import NavBar from "./components/nav"
 
 export const metadata: Metadata = {
   title: {
-    default: 'Md. Zeeshan',
+    default: 'Zeeshan',
     template: '%s | Z3SH4N',
   },
-  description: 'This is Md. Zeeshan\'s portfolio.',
+  description: 'This is Zeeshan\'s portfolio.',
   openGraph: {
-    title: 'Md. Zeeshan Porfolio',
-    description: 'This is Md. Zeeshan\'s portfolio.',
+    title: 'Zeeshan Porfolio',
+    description: 'This is Zeeshan\'s portfolio.',
     siteName: 'Z3SH4N',
     locale: 'en_US',
     type: 'website',
@@ -55,13 +55,12 @@ export default function RootLayout({
     >
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="antialiased">
-          <main className="relative mx-auto mt-6 max-w-xl px-6 ">
+          <main className="relative mx-auto mt-6 max-w-xl px-4">
             <div>
-            <NavBar />
+            {/* <NavBar /> */}
             <BlurFade inView>
             {children}
             </BlurFade>
-            <Footer />
             <SpeedInsights/>
             </div>
           </main>

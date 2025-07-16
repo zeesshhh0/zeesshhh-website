@@ -6,17 +6,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import HyperText from "./hyper-text";
 
-const navItems = [
-  {
-    path: "/blog",
-    name: "blog",
-  },
-  {
-    path: "/projects",
-    name: "projects",
-  },
+// const navItems = [
+//   // {
+//   //   path: "/projects",
+//   //   name: "projects",
+//   // },
   
-];
+// ];
 
 export default function NavBar() {
   let pathname = usePathname() || "/";
@@ -32,7 +28,7 @@ export default function NavBar() {
         >
         <HyperText text="Z3SH4N"></HyperText>
         </Link>
-      <div className="flex relative justify-start z-[100] rounded-lg">
+      {/* <div className="flex relative justify-start z-[100] rounded-lg">
 
         {navItems.map((item, index) => {
           return (
@@ -71,7 +67,7 @@ export default function NavBar() {
             </Link>
           );
         })}
-      </div>
+      </div> */}
     </nav>
   );
 }
