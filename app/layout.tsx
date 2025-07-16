@@ -10,13 +10,23 @@ export const metadata: Metadata = {
     default: 'Zeeshan | AI Engineer',
     template: '%s | Zeeshan ',
   },
-  description: 'This is Zeeshan\'s portfolio.',
+  description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
   openGraph: {
     title: 'Zeeshan Porfolio',
-    description: 'This is Zeeshan\'s portfolio.',
+    description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
     siteName: 'Zeeshan',
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Zeeshan | AI Engineer',
+    description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
+    creator: '@zeesshhh0',
+    images: {
+      url: '/avatar.jpeg',
+      alt: 'Preview image for Zeeshan Avatar',
+    }
   },
   robots: {
     index: true,
