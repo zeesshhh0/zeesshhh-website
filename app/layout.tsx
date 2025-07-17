@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     default: 'Zeeshan | AI Engineer',
     template: '%s | Zeeshan ',
   },
-  description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
+  description: 'an AI Engineer Building and fine-tuning the next generation of AI applications.',
   openGraph: {
-    title: 'Zeeshan Porfolio',
-    description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
+    title: 'Zeeshan | AI Engineer',
+    description: 'an AI Engineer Building and fine-tuning the next generation of AI applications.',
     siteName: 'Zeeshan',
     locale: 'en_US',
     type: 'website',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Zeeshan | AI Engineer',
-    description: 'Zeeshan\'s portfolio. an AI Engineer Building and fine-tuning the next generation of AI applications.',
+    description: 'an AI Engineer Building and fine-tuning the next generation of AI applications.',
     creator: '@zeesshhh0',
     images: {
       url: '/avatar.jpeg',
