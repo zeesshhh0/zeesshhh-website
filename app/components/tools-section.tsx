@@ -48,9 +48,6 @@ export default function ToolsSection() {
     },
   ]
 
-
-
-
   // Simple icon component that renders a placeholder for each technology
   const TechIcon = ({ name }: { name: string }) => (
     <Image src={`/icons/${name}.svg`} alt={name} width={32} height={32} />
