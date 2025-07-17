@@ -7,21 +7,43 @@ export default function ToolsSection() {
       toolName: "AI", list: [
         { name: "CrewAI", icon: "crewai" },
         { name: "Langchain", icon: "langchain" },
+        // { name: "LlamaIndex", icon: "llamaindex" },
+        { name: "OpenAI", icon: "openai" },
+        { name: "HuggingFace", icon: "huggingface" },
+      ]
+    },
+    {
+      toolName: "Backend", list: [
+        { name: "FastAPI", icon: "fastapi" },
+        { name: "PHP", icon: "php" },
+        { name: "Python", icon: "python" },
+        { name: "Vercel", icon: "vercel" },
+      ]
+    },
+    {
+      toolName: "Database", list: [
+        { name: "MYSQL", icon: "mysql" },
+        { name: "Sqlite", icon: "sqlite" },
       ]
     },
     {
       toolName: "Frontend", list: [
         { name: "React", icon: "react" },
         { name: "Next.JS", icon: "nextjs" },
+        { name: "Flutter", icon: "flutter" },
         { name: "Typescript", icon: "typescript" },
         { name: "TailwindCSS", icon: "tailwind" },
         { name: "ShadCN UI", icon: "shadcn" },
       ]
     },
     {
-      toolName: "Backend", list: [
-        { name: "FastAPI", icon: "fastapi" },
-        { name: "Vercel", icon: "vercel" },
+      toolName: "Additional", list: [
+        { name: "Firebase", icon: "firebase" },
+        { name: "Wordpress", icon: "wordpress" },
+        { name: "VS Code", icon: "vscode" },
+        { name: "Docker", icon: "docker" },
+        { name: "Git", icon: "git" },
+        { name: "GitHub", icon: "github" },
       ]
     },
   ]
