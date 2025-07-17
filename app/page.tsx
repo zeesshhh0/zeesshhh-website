@@ -12,14 +12,14 @@ import BlurFade from './components/blur-fade';
 
 export default function Page() {
   return (
-    <div className="min-h-svh text-zinc-300 flex flex-col justify-between">
+    <div className="min-h-svh text-zinc-300 flex flex-col justify-between text-balance">
       <div>
         {/* Header */}
         <header className="container mx-auto px-2 py-4">
           <div className="mb-8">
-            <h1 className="text-xl font-bold text-white">Hey, I&apos;m Zeeshan</h1>
-            <p className="mt-2 text-zinc-400 font-medium">
-                I am an AI Engineer Building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
+            <h1 className="text-3xl font-bold text-white">Hey, I&apos;m Zeeshan</h1>
+            <p className="mt-2 text-zinc-400 font-medium text-lg">
+                an AI Engineer building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
             </p>
 
             {/* Social Links */}
@@ -44,19 +44,19 @@ export default function Page() {
             <TabsList className="bg-transparent p-0 mb-4">
               <TabsTrigger
                 value="work"
-                className="data-[state=active]:font-extrabold rounded-none px-0 py-2"
+                className="data-[state=active]:font-extrabold px-0 py-2 text-md"
               >
                 Work
               </TabsTrigger>
               <TabsTrigger
                 value="experience"
-                className="data-[state=active]:font-extrabold rounded-none px-4 py-2"
+                className="data-[state=active]:font-extrabold px-4 py-2 text-md"
               >
                 Experience
               </TabsTrigger>
               <TabsTrigger
                 value="tools"
-                className="data-[state=active]:font-extrabold px-0 py-2"
+                className="data-[state=active]:font-extrabold px-0 py-2 text-md"
               >
                 Tools
               </TabsTrigger>

@@ -41,7 +41,7 @@ export default function WorkSection() {
       {projects.map((project, index) => (
         <div key={index} className="space-y-2 hover:translate-x-1 transition-all duration-300 ease-out">
           <div className="flex items-center justify-between">
-            <h2 className="text-md font-bold">{project.title}</h2>
+            <h2 className="text-lg font-bold text-zinc-300">{project.title}</h2>
             <div className="flex space-x-2">
               <Button variant="ghost" size="icon" asChild>
                 <Link href={project.githubUrl} aria-label="GitHub">
@@ -57,10 +57,10 @@ export default function WorkSection() {
               )}
             </div>
           </div>
-          <p className="text-sm text-zinc-400 font-medium">{project.description}</p>
+          <p className="text-md text-zinc-400 font-medium">{project.description}</p>
           <div className="flex flex-wrap gap-2 mt-2">
             {project.technologies.map((tech, techIndex) => (
-              <span key={techIndex} className="text-xs text-zinc-500">
+              <span key={techIndex} className="text-sm text-zinc-500">
                 {tech}
                 {techIndex < project.technologies.length - 1 ? " /" : ""}
               </span>

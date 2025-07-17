@@ -15,10 +15,10 @@ export default function ExperienceSection() {
       {experiences.map((experience, index) => (
         <div key={index} className="space-y-2 hover:translate-x-1 transition-all duration-300 ease-out">
           <div className="flex items-start justify-between">
-            <h2 className="text-md font-bold">{experience.title}</h2>
-            <span className="text-sm text-zinc-400">{experience.period}</span>
+            <h2 className="text-md sm:text-xl font-bold text-zinc-300">{experience.title}</h2>
+            <span className="text-sm sm:text-md text-zinc-400 font-medium">{experience.period}</span>
           </div>
-          <div className="text-sm text-zinc-400 font-medium">{experience.description}</div>
+          <div className="text-sm sm:text-md text-zinc-400 font-medium">{experience.description}</div>
           <div className="flex flex-wrap gap-2 mt-2">
             {experience.technologies.map((tech, techIndex) => (
               <span key={techIndex} className="text-xs text-zinc-500">
