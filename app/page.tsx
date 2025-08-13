@@ -1,15 +1,17 @@
+'use client';
 import Link from 'next/link';
 import { SiGithub, SiPeerlist, SiX } from '@icons-pack/react-simple-icons';
+import dynamic from 'next/dynamic';
 
 import WorkSection from './components/projects-section';
-import ExperienceSection from './components/experience-section';
-import ToolsSection from './components/tools-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/app/components/tabs';
 import { Mail } from 'lucide-react';
 import Footer from './components/footer';
 import BlurFade from './components/blur-fade';
-import { BlogsSection } from './components/blogs-section';
 
+const ExperienceSection = dynamic(() => import('./components/experience-section'), { ssr: false });
+const ToolsSection = dynamic(() => import('./components/tools-section'), { ssr: false });
+const BlogsSection = dynamic(() => import('./components/blogs-section').then(mod => mod.BlogsSection), { ssr: false });
 
 export default function Page() {
   return (
