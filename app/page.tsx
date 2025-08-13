@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/app/components/tabs'
 import { Mail } from 'lucide-react';
 import Footer from './components/footer';
 import BlurFade from './components/blur-fade';
+import { BlogsSection } from './components/blogs-section';
 
 
 export default function Page() {
@@ -60,6 +61,12 @@ export default function Page() {
               >
                 Tools
               </TabsTrigger>
+              <TabsTrigger
+                value="blogs"
+                className="data-[state=active]:font-extrabold px-4 py-2 text-md"
+              >
+                Blogs
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="work">
@@ -77,6 +84,11 @@ export default function Page() {
             <TabsContent value="tools">
               <BlurFade inView>
                 <ToolsSection />
+              </BlurFade>
+            </TabsContent>
+            <TabsContent value="blogs">
+              <BlurFade inView>
+                <BlogsSection />
               </BlurFade>
             </TabsContent>
           </Tabs>
