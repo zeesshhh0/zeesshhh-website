@@ -28,16 +28,16 @@ export default function Page() {
 
             {/* Social Links */}
             <div className="mt-8 flex space-x-2 gap-4">
-              <Link href="https://github.com/zeesshhh0/" aria-label="GitHub">
+              <Link href="https://github.com/zeesshhh0/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <SiGithub size={20} className='text-zinc-400 hover:text-zinc-100 transition-all' />
               </Link>
-              <Link href="https://x.com/zeesshhh0/" aria-label="Twitter">
+              <Link href="https://x.com/zeesshhh0/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <SiX size={20} className='text-zinc-400 hover:text-zinc-100 transition-all' />
               </Link>
-              <Link href="https://www.linkedin.com/in/zishan-ghaniwala/" aria-label="Linkedin">
+              <Link href="https://www.linkedin.com/in/zishan-ghaniwala/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
                 <Image alt="Linkedin" width={20} height={20} src={`/icons/linkedin.svg`} className='transition-all opacity-50 hover:opacity-100' />
               </Link>
-              <Link href="https://peerlist.io/zeesshhan" aria-label="PeerList">
+              <Link href="https://peerlist.io/zeesshhan" target="_blank" rel="noopener noreferrer" aria-label="PeerList">
                 <SiPeerlist size={20} className='text-zinc-400 hover:text-zinc-100 transition-all' />
               </Link>
               <Link href="mailto:zishanghaniwala@gmail.com" aria-label="Email">

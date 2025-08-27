@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Github, ExternalLink } from "lucide-react"
 import { Button } from "./button"
+import { SiGithub } from "@icons-pack/react-simple-icons"
 
 export default function WorkSection() {
   const projects = [
@@ -44,13 +45,13 @@ export default function WorkSection() {
             <h2 className="text-lg font-bold text-zinc-300">{project.title}</h2>
             <div className="flex space-x-2">
               <Button variant="ghost" size="icon" asChild>
-                <Link href={project.githubUrl} aria-label="GitHub">
-                  <Github className="h-5 w-5" />
+                <Link href={project.githubUrl} aria-label="GitHub" target="_blank">
+                  <SiGithub className="h-5 w-5" />
                 </Link>
               </Button>
               {project.liveUrl && (
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href={project.liveUrl} aria-label="View Live">
+                  <Link href={project.liveUrl} aria-label="View Live" target="_blank">
                     <ExternalLink className="h-5 w-5" />
                   </Link>
                 </Button>

@@ -33,7 +33,7 @@ export function BlogsSection() {
       ) : (
         <div className="space-y-2">
           {articles.map((article) => (
-            <Link key={article.title} href={article.link}>
+            <Link key={article.title} href={article.link} target="_blank">
               <h3 className="text-md sm:text-xl font-semibold text-zinc-300 mb-2">{article.title}</h3>
               <p className="text-sm text-gray-500 mb-4">{new Date(article.pubDate).toLocaleDateString()}</p>
             </Link>
