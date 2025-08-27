@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { SiGithub, SiPeerlist, SiX } from '@icons-pack/react-simple-icons';
 import dynamic from 'next/dynamic';
 
@@ -22,7 +23,7 @@ export default function Page() {
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-white">Hey, I&apos;m Zeeshan</h1>
             <p className="mt-2 text-zinc-400 font-medium text-lg">
-                an AI Engineer building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
+              an AI Engineer building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
             </p>
 
             {/* Social Links */}
@@ -32,6 +33,9 @@ export default function Page() {
               </Link>
               <Link href="https://x.com/zeesshhh0/" aria-label="Twitter">
                 <SiX size={20} className='text-zinc-400 hover:text-zinc-100 transition-all' />
+              </Link>
+              <Link href="https://www.linkedin.com/in/zishan-ghaniwala/" aria-label="Linkedin">
+                <Image alt="Linkedin" width={20} height={20} src={`/icons/linkedin.svg`} className='transition-all opacity-50 hover:opacity-100' />
               </Link>
               <Link href="https://peerlist.io/zeesshhan" aria-label="PeerList">
                 <SiPeerlist size={20} className='text-zinc-400 hover:text-zinc-100 transition-all' />

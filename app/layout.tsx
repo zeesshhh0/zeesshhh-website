@@ -5,28 +5,28 @@ import RootLayoutClient from "./layout-client";
 
 export const metadata: Metadata = {
   title: {
-    default: "Zeeshan | AI Engineer",
-    template: "%s | Zeeshan ",
+    default: "Zeeshan | AI Agent Engineer",
+    template: "%s | Zeeshan",
   },
   description:
-    "an AI Engineer Building and fine-tuning the next generation of AI applications.",
+    "Zeeshan is a Generative AI Engineer specializing in creating advanced RAG solutions, building AI agents, and designing multi-agentic systems. Explore my portfolio to see projects with LangChain, CrewAI, and more.",
   openGraph: {
-    title: "Zeeshan | AI Engineer",
+    title: "Zeeshan | AI Agent Engineer 🤖",
     description:
-      "an AI Engineer Building and fine-tuning the next generation of AI applications.",
-    siteName: "Zeeshan",
+      "I build intelligent AI agents, RAG systems, and multi-agentic solutions. View my portfolio to learn about my projects with LangChain and other cutting-edge tools.",
+    siteName: "Zeeshan's AI Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zeeshan | AI Engineer",
+    title: "Building the Future with AI Agents 🚀",
     description:
-      "an AI Engineer Building and fine-tuning the next generation of AI applications.",
+      "I specialize in creating and deploying advanced RAG solutions and multi-agent systems. From design to deployment, I create intelligent AI applications.",
     creator: "@zeesshhh0",
     images: {
       url: "/avatar.jpeg",
-      alt: "Preview image for Zeeshan Avatar",
+      alt: "Zeeshan's professional portfolio and AI projects",
     },
   },
   robots: {
