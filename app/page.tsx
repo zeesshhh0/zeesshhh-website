@@ -23,7 +23,7 @@ export default function Page() {
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-white">Hey, I&apos;m Zeeshan</h1>
             <p className="mt-2 text-zinc-400 font-medium text-lg">
-              an AI Engineer building and fine-tuning the next generation of AI applications. Open to work. Contact me below.
+              AI Engineer specializing in the next generation of intelligent agents, RAG, and multi-agent systems. Open to work.
             </p>
 
             {/* Social Links */}
