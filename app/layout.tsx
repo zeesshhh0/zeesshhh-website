@@ -5,13 +5,13 @@ import RootLayoutClient from "./layout-client";
 
 export const metadata: Metadata = {
   title: {
-    default: "Zeeshan | AI Agent Engineer",
+    default: "Zeeshan | AI Engineer",
     template: "%s | Zeeshan",
   },
   description:
     "Zeeshan is a Generative AI Engineer specializing in creating advanced RAG solutions, building AI agents, and designing multi-agentic systems. Explore my portfolio to see projects with LangChain, CrewAI, and more.",
   openGraph: {
-    title: "Zeeshan | AI Agent Engineer 🤖",
+    title: "Zeeshan | AI Engineer 🤖",
     description:
       "I build intelligent AI agents, RAG systems, and multi-agentic solutions. View my portfolio to learn about my projects with LangChain and other cutting-edge tools.",
     siteName: "Zeeshan's AI Portfolio",
