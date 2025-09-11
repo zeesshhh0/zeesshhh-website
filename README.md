@@ -1,113 +1,90 @@
-# Z3SH4N Website
+# zeesshhh Portfolio Website
 
-A customizable, modern portfolio website to showcase your projects, skills, and achievements. This template is inspired by the elegant design and user experience of [Duy le's portfolio](https://www.duyle.dev/).
+This is a modern and customizable portfolio website built to showcase projects, skills, and professional experience, all with a focus on performance and aesthetics.
 
 ## Features
 
-- Responsive design that looks great on all devices
-- Customizable sections for projects, blog posts, and skills
-- Smooth page transitions and animations
-- SEO optimized
-- Built with performance in mind
+* **Responsive Design**: Looks great on all devices, from mobile phones to desktop computers.
+* **Customizable Sections**: Easily updateable sections for projects, blog posts, and skills to keep your portfolio current.
+* **Smooth Animations**: Page transitions and animations are implemented to provide a better user experience.
+* **SEO Optimized**: The website is built with Search Engine Optimization in mind to ensure it ranks well in search results.
+* **Performance**: Built with performance as a priority to ensure fast loading times.
 
 ## Getting Started
 
+These instructions will help you set up a copy of the project on your local machine for development and testing purposes.
+
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+You'll need to have the following software installed on your computer:
+
+* [Node.js](https://nodejs.org/) (v14 or higher)
+* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/z3sh4n/z3sh4n-website.git
-cd z3sh4n-website
-```
+1.  **Clone the repository:**
 
-2. Install dependencies:
-```bash
-npm install
-```
+    ```bash
+    git clone [https://github.com/zeesshhh0/zeesshhh-website.git](https://github.com/zeesshhh0/zeesshhh-website.git)
+    cd zeesshhh-website
+    ```
+   
 
-3. Start the development server:
-```bash
-npm run dev
-```
+2.  **Install dependencies:**
+
+    Using npm:
+
+    ```bash
+    npm install
+    ```
+   
+
+    Or using yarn:
+
+    ```bash
+    yarn install
+    ```
+
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+   
+
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Customization
 
+You can easily customize this portfolio to make it your own.
+
 ### Personal Information
 
-Edit `app/page.tsx` to update your personal information:
-
-- Name and title
-- Avatar image (place new image in `public/avatar/`)
-- About me description
-- Resume link
+To update your personal information, such as your name, title, avatar, and resume link, edit the `app/page.tsx` file.
 
 ### Skills & Technologies
 
-Modify `app/components/skills_icon` to list your technical skills:
+You can showcase your technical skills by modifying the `app/components/tools-section.tsx` file. To add a new skill icon:
 
-- Convert the SVG of the skill to a React component using a tool like [svgr](https://github.com/smooth-code/svgr)
-- Place the generated component in the `app/components/skills_icon` folder
-- then edit this list `app/components/skills.tsx` to show case that skill on main page
+1.  Convert an SVG of the skill to a React component.
+2.  Place the new component in the `public/icons/` folder.
+3.  Add the skill to the list in `app/components/tools-section.tsx`.
 
 ### Projects
 
-Add your projects in `app/components/projects.tsx`:
+Your projects can be added to the `app/components/projects-section.tsx` file. For each project, you can include:
 
-- Project title
-- Description
-- Technologies used
-- GitHub repository link
-- Live demo link
-- Screenshot/preview image
+* Title
+* Description
+* Technologies used
+* GitHub repository link
+* Live demo link
 
 ### Blog Posts
 
-Update `app/blog/posts` to feature your latest articles as mdx:
-
-- Title
-- Publication date
-- Description
-- Link to full article
-- Cover image
-
-## Deployment
-
-Deploy to your preferred hosting platform:
-- Vercel
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-
-i have used vercel for hosting, and its great in my opinion
+To feature your latest articles, you can update the `app/components/blogs-section.tsx` file. This section fetches your blog posts from Medium.
 
 ## Acknowledgments
 
-- Design inspired by [Duy le's portfolio](https://www.duyle.dev/)
-- Icons provided by [React Icons](https://react-icons.github.io/react-icons/)
-- Built with [Next.js](https://nextjs.org/)
-
-## Contact
-
-For any questions or feedback, please reach out to [your-email@example.com]
-
-
-## TODOS
-
-- [x] add avatar and that little tag of me and my name
-- [x] add description
-- [x] add skill section
-- [x] add nav bar
-- [x] add project section
-- [x] add Blog section
-- [x] remove that blur animation and try to replace with something else
-- [x] break main elements into parts
-- [x] add contact button
-- [x] update metadata
-- [x] fix some UI on mobile
-- [ ] add that avatar type animation
-- [ ] add cv section from that github repo
+* The project was built with [Next.js](https://nextjs.org/).
